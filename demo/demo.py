@@ -1,4 +1,4 @@
-#测试,一起提交
+# 测试,一起提交
 import keyword
 
 qq_number = str(983045775)
@@ -65,7 +65,9 @@ else:
 python_score = int(input("输入python成绩"))
 c_score = int(input("输入c成绩"))
 
-if python_score > 60 or c_score > 60:
+if (python_score > 60
+        or c_score > 60):
+
     print("成绩合格")
 else:
     print("不合格")
@@ -77,6 +79,7 @@ elif is_emloyee:
     print("不允许进")
 
 holiday_name = input("女朋友的节日")
+
 if holiday_name.__eq__("情人节"):
     print("买玫瑰")
 elif holiday_name.__eq__("平安夜"):
