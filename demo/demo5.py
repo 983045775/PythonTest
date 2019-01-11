@@ -6,8 +6,5 @@ while i < 9:
     j = 0
     while j < i:
         j += 1
-        if (j == 3 and i == 3) or (j == 3 and i == 4):
-            print(" %dx%d=%d " % (j, i, i * j), end="")
-        else:
-            print("%dx%d=%d " % (j, i, i * j), end="")
+        print("%dx%d=%d\t" % (j, i, i * j), end="")
     print("")
