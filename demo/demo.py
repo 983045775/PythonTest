@@ -27,7 +27,7 @@ print(bool(size))
 apple_size = int(input("输入数量"))
 a_money = float(input("输入价格"))
 
-print("价格是: ,%%" % (apple_size * a_money))
+print("价格是: %.2f" % (apple_size * a_money))
 
 name = "小明";
 print("我的名字叫%s,请多多指教" % name)
