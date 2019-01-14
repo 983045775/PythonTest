@@ -38,5 +38,9 @@ exercise_list.reverse()
 exercise_list.sort()
 # 反排序
 exercise_list.sort(reverse=True)
-print(copy_list)
-print(exercise_list)
+
+for copy_item in copy_list:
+    print(copy_item, end="   ")
+
+for exercise_item in exercise_list:
+    print(exercise_item, end=" ")
