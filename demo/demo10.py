@@ -31,3 +31,7 @@ for item in convert_tuple:
 
 for item in data_list:
     print(item)
+
+peple_msg = ("name", 17, 83.4)
+
+print("姓名是:%s 年龄是%d 体重是%.2fKG" % peple_msg)
