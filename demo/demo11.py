@@ -23,9 +23,9 @@ print(peple.get("age"))
 # 随机返回并删除字典中的一对键和值
 print(peple.popitem())
 # 如果键不存在于字典中，将会添加键并将值设为default
-peple.setdefault("aaa", "bbb")
+peple.setdefault("location", "bb啊啊啊啊啊b")
 # 将其他的字典添加到peple中,如果已有则替代
-peple.update()
+peple.update({"location": "bb啊啊啊啊啊b"})
 # 取出所有的value
 print(list(peple.values()))
 print(peple_copy)

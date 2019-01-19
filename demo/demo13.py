@@ -16,6 +16,13 @@ for num in range(10, 20):
     else:
         print("%d 是一个质数" % num)
 
-num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, [3, 4, 5]]
 # 输出3到7
 print(num_list[2:-2])
+
+#TODO
+seach_list = [3, 4, 5]
+
+seach_bool = seach_list in num_list
+
+print(seach_bool)
