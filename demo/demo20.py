@@ -20,13 +20,17 @@ class House:
         print("%s的房子,面积%.2f" % (house_type, area))
 
     def __str__(self):
-        return "房子是%.2f大小,空余%.2f平米,家具有%s " % (self.area, self.free_area, ",".join(self.furniture_list))
+        furnitureName = ""
+        for furniture in self.furniture_list:
+            furnitureName += furniture.name + " "
+
+        return "房子是%.2f大小,空余%.2f平米,家具有%s " % (self.area, self.free_area, furnitureName)
 
     def add_furniture(self, furniture):
         if furniture.area > self.free_area:
             print("面积过大了,你这玩意%.2f那么大,空间就剩%.2f了" % (furniture.area, self.area))
             return
-        self.furniture_list.append(furniture.name)
+        self.furniture_list.append(furniture)
         self.free_area -= furniture.area
 
 

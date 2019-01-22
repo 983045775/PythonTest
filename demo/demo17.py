@@ -1,6 +1,6 @@
 def result_person(name):
-    age = 0
-    height = 0
+    age = None
+    height = None
     if name.__eq__("lc"):
         age = 10
         height = 94.5
